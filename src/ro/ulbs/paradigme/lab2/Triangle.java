@@ -1,12 +1,10 @@
 package ro.ulbs.paradigme.lab2;
 
-public class Triangle
-extends ro.ulbs.paradigme.lab2.Form {
-    private floate height;
+public class Triangle extends Form {
+    private float height;
     private float base;
 
     public Triangle(){
-        super();
         this.height=1.0f;
         this.base=1.0f;
     }
@@ -19,7 +17,8 @@ extends ro.ulbs.paradigme.lab2.Form {
 
     @Override
     public String toString(){
-     return super.toString() "and its area is" getArea();
+     return super.toString() "and its area is";
+     getArea();
     }
 
     public boolean equals(Triangle other){

@@ -1,9 +1,9 @@
 package ro.ulbs.paradigme.lab2;
 
-public class Square extends ro.ulbs.paradigme.lab2.Form {
-    private flost side;
+public class Square extends Form {
+    private float side;
 
-    public Swuare(){
+    public Square(){
         super();
         this.side=1.0f;
     }
