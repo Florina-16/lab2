@@ -1,26 +1,26 @@
 package ro.ulbs.paradigme.lab2;
 
-public class Circle extends Form {
+class Circle extends Form {
     private float radius;
 
-    public Circle(){
+    public Circle() {
         super();
-        this.radius=1.0f;
+        this.radius = 0;
     }
 
-    public Circle(String color, float radius){
+    public Circle(float radius, String color) {
         super(color);
-        this.radius=radius;
+        this.radius = radius;
     }
 
     @Override
-    public float getArea(){
-
-        return(float)(Math.PI*radius*radius);
+    public float getArea() {
+        return (float) (Math.PI * radius * radius);
     }
 
     @Override
-    public String toString(){
-        return super.toString() "and its are is" getArea();
+    public String toString() {
+        return super.toString() + ", Circle with radius " + radius;
     }
 }
+

@@ -1,28 +1,38 @@
 package ro.ulbs.paradigme.lab2;
-
-public class Triangle extends Form {
+// Clasa derivata Triangle
+class Triangle extends Form {
     private float height;
     private float base;
 
-    public Triangle(){
-        this.height=1.0f;
-        this.base=1.0f;
+    public Triangle() {
+        super();
+        this.height = 0;
+        this.base = 0;
     }
 
-    public Triangle (String color, float height, float base){
+    public Triangle(float height, float base, String color) {
         super(color);
-        this.height=height;
-        this.base=base;
+        this.height = height;
+        this.base = base;
     }
 
     @Override
-    public String toString(){
-     return super.toString() "and its area is";
-     getArea();
+    public float getArea() {
+        return (base * height) / 2;
     }
 
-    public boolean equals(Triangle other){
-        return this.base==other.base&&this.height==other.height&&this.color.equals(other.color);
-    }
+    @Override
+    public String toString() {
+        return super.toString() + ", Triangle with base " + base + " and height " + height;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Triangle triangle = (Triangle) obj;
+        return Float.compare(triangle.height, height) == 0 &&
+                Float.compare(triangle.base, base) == 0 &&
+                this.toString().equals(triangle.toString());
+    }
+}

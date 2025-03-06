@@ -1,25 +1,25 @@
 package ro.ulbs.paradigme.lab2;
 
-public class Square extends Form {
+class Square extends Form {
     private float side;
 
-    public Square(){
+    public Square() {
         super();
-        this.side=1.0f;
+        this.side = 0;
     }
 
-    public Square(String color, float side){
+    public Square(float side, String color) {
         super(color);
-        this.side=side;
+        this.side = side;
     }
 
     @Override
-    public float getArea(){
-        return side*side;
+    public float getArea() {
+        return side * side;
     }
 
     @Override
-    public String toString(){
-        return super.toString() "and its area is" getArea();
+    public String toString() {
+        return super.toString() + ", Square with side " + side;
     }
 }

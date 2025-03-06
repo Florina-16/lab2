@@ -1,15 +1,13 @@
 package ro.ulbs.paradigme.lab2;
 
-public class Application {
-    public static void main (String[] args){
-        Triangle tri=new Triangle("red", 1.1F, 2.0F);
-        Circle c=new Circle("yellow", 1.5F);
-        Square sq=new Square("blue",1.2F );
-    }
+class Application {
+    public static void main(String[] args) {
+        Triangle tri = new Triangle(1.1F, 2.0F, "red");
+        Circle c = new Circle(1.5F, "yellow");
+        Square sq = new Square(1.2F, "blue");
 
-    {
-        System.out.println("Area = "tri.getArea() + "details: " + tri);
-        System.out.println("Area = "c.getArea() + "details: "_ + c);
+        System.out.println("Area = " + tri.getArea() + " details: " + tri);
+        System.out.println("Area = " + c.getArea() + " details: " + c);
         System.out.println("Area = " + sq.getArea() + " details: " + sq);
 
         Triangle tri2 = new Triangle(1.1F, 2.0F, "red");

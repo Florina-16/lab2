@@ -1,5 +1,6 @@
 package ro.ulbs.paradigme.lab2;
 
+// Clasa de baza Form
 public class Form {
     private String color;
 
@@ -7,7 +8,7 @@ public class Form {
         this.color = "white";
     }
 
-    public Form() {
+    public Form(String color) {
         this.color = color;
     }
 
@@ -17,6 +18,6 @@ public class Form {
 
     @Override
     public String toString() {
-        return "This form has the color blue";
+        return "This form has the color " + color;
     }
 }
