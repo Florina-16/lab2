@@ -1,19 +1,18 @@
-package ro.ulbs.paradigme.lab2;
+package ro.ulbs.paradigme.lab3;
 
-// Clasa de baza Form
+
 public class Form {
     private String color;
+    public static int counter=0;
 
-    public Form() {
-        this.color = "white";
+    public Form(){
+        this.color="white";
+        counter++;
     }
 
     public Form(String color) {
         this.color = color;
-    }
-
-    public static String getCounter() {
-        
+        counter++;
     }
 
     public float getArea() {
@@ -23,5 +22,9 @@ public class Form {
     @Override
     public String toString() {
         return "This form has the color " + color;
+    }
+
+    public static int getCounter(){
+        return counter;
     }
 }
