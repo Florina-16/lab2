@@ -19,7 +19,19 @@ public class Main {
         List<Integer> xPlusy=new ArrayList<>(x);
         xPlusy.addAll(y);
         Collections.sort(xPlusy);
-        System.out.println("Lista x ordonata:" + xPlusy);
+        System.out.println("x + y ordonat:" + xPlusy);
 
+        Set<Integer> zSet=new TreeSet<>(x);
+        zSet.retainAll(y);
+        System.out.println("Elemente comune: " + zSet);
 
+        List<Integer> xMinusy=new ArrayList<>(x);
+        xMinusy.removeAll(y);
+        System.out.println("x - y: " + xMinusy);
+
+        int p=5;
+        List<Integer> xPlusYLimitedByP=new ArrayList<>();
+        for(int num: xPlusy){
+
+        }
 }

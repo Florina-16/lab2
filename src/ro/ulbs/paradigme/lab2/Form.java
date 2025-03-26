@@ -1,6 +1,5 @@
 package ro.ulbs.paradigme.lab2;
 
-// Clasa de baza Form
 public class Form {
     private String color;
 
@@ -10,10 +9,6 @@ public class Form {
 
     public Form(String color) {
         this.color = color;
-    }
-
-    public static String getCounter() {
-        
     }
 
     public float getArea() {
