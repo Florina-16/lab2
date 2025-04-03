@@ -1,8 +1,8 @@
 package ro.ulbs.paradigme.lab4;
+
 import java.util.*;
 
-
-public class Operatii {
+public class CollectionsOperations {
     public static void main(String[] args) {
         Random rand = new Random();
         List<Integer> x = new ArrayList<>();
