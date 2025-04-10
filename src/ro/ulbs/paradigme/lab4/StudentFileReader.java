@@ -24,6 +24,6 @@ public class StudentFileReader {
         }
 
         System.out.println("Apariții studenți:");
-        StudentCount.forEach((student, count) -> System.out.println(student + " - Apare de " + count + " ori"));
+        //StudentCount.forEach((student, count) -> System.out.println(student + " - Apare de " + count + " ori"));
     }
 }
